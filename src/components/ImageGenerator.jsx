@@ -13,7 +13,7 @@ function ImageGenerator() {
     setImageUrl(null);
 
     try {
-      const response = await fetch(`http://localhost:3000/generateimage?prompt=${encodeURIComponent(prompt)}`);
+      const response = await fetch(`http://103.119.171.112:3000/generateimage?prompt=${encodeURIComponent(prompt)}`);
       if (!response.ok) {
         throw new Error('Failed to generate image');
       }
